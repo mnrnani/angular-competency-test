@@ -1,0 +1,19 @@
+{{am.friend.name}}'s Profile
+
+<div>
+    <a href="#/friends">Back</a>
+</div>
+
+<div class="row">
+    <div class="col-sm-2"><img class="img-responsive" src="{{am.friend.img}}"></img></div>
+    <div class="col-sm-10">
+        <div class="pull-right">{{am.friend.available | availability}}</div>
+        <div>{{am.friend.name}}</div>
+        <div>{{am.friend.phone}}</div>
+        <div>{{am.friend.address}}</div>
+        <div>{{am.friend.status}}</div>
+    </div>
+</div>
+<div>{{am.friend.bio}}</div>
+<div>{{am.friend.statuses}}</div>
+<div>{{am.friend.photos}}</div>
