@@ -1,0 +1,14 @@
+<h3>My Friends</h3>
+<div ng-show="vm.friends.length == 0">
+    No Friends :)
+</div>
+<table class="table table-striped">
+  <tr ng-repeat="friend in vm.friends">
+        <td><img ng-src="{{friend.img}}" height="50" width="50"></img></td>
+        <td><a href="#/friends/{{friend.id}}">{{friend.name}}</a></td>
+        <td>{{friend.status}}</td>
+        <td>{{friend.address}}</td>
+        <td>{{friend.available | availability}}</td>
+        <td><button class="btn btn-small btn-secondary" ng-click="vm.removeFriend(friend.id)"><i class="glyphicon glyphicon-trash"></i></button></td>
+  </tr>
+</table>
